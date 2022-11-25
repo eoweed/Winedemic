@@ -62,7 +62,7 @@ We have compiled a spreadsheet with specific information as it pertains to each 
 
 **Database Set-up Code**
 
-[Database Set-up Code](https://github.com/Sgant1/Final_Project/blob/8277ed984b9bb0ba5046f468a511b0789af6f3c2/SQL/schema.sql "Raw Data for Set-up Code")
+[Database Set-up Code](https://github.com/eoweed/Winedemic/blob/main/SQL/schema.sql "Raw Data for Set-up Code")
 
 **Description of Machine Learning model:**
 
