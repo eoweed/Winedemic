@@ -21,7 +21,9 @@
 
 ## Week 1 Objectives:
 - Complete Project Proposal and get approval. (Granted!)
+
 "[Project Proposal]"(https://docs.google.com/document/d/1zHZrEiBU_xwVG8T5lrOBgKtYCqI6weuc/edit?usp=sharing&ouid=115296781988388488466&rtpof=true&sd=true)
+
 - Create rough draft for cleaning 2019, 2020 and 2021 data.
 - Create rough draft for joining individual months into annual data frames and .csv files.
 - Create rough draft for connecting Pandas to pgAdmin.
@@ -107,13 +109,19 @@ ________________________________________________________________________________
 ### How many items/bottles have been purchased in each state from January 2019 to December 2021?
 2019:
 ![2019_descending_count_by_state_1-25](https://user-images.githubusercontent.com/106630710/203457060-fca94ca6-aa31-4f3b-9f62-02801388d380.png)
+
 ![2019_descending_count_by_state_26-end](https://user-images.githubusercontent.com/106630710/203456971-065a37f9-593a-4875-8d83-97f20ed36c18.png)
+
 2020:
 ![2020_total_count_by_state_1-25](https://user-images.githubusercontent.com/106630710/203455489-782f15c9-9d02-4d9a-8f0d-25147215dee2.png)
+
 ![2020_total_count_by_state_26-end](https://user-images.githubusercontent.com/106630710/203455497-23334c69-aba8-4066-8919-b1a11523d715.png)
+
 2021:
 ![2021_total_count_by_state_1-25](https://user-images.githubusercontent.com/106630710/203455532-32628b34-b9a6-46c2-93f8-b63ae1a217b3.png)
+
 ![2021_total_count_by_state_26-end](https://user-images.githubusercontent.com/106630710/203455538-f4aab159-b881-4524-a2d0-2e8d95547574.png)
+
 
 ### Which state consumed the most wine?
 - 2019: New York: 190,449
@@ -133,14 +141,18 @@ ________________________________________________________________________________
 - Total Bottle Count for Red states in 2020: 338,744
 - Total Bottle Count for Red states in 2021: 322,781
 <img width="589" alt="2019_total_bottle_count_red" src="https://user-images.githubusercontent.com/106630710/203440228-56fb2e37-a5a3-467e-8e92-f38521769f0d.png">
+
 <img width="565" alt="2020_total_red_count" src="https://user-images.githubusercontent.com/106630710/202340028-7d070b9a-d91b-4b2b-bfee-6278c3d21664.png">
+
 ![2021_total_bottle_count_red](https://user-images.githubusercontent.com/106630710/203440204-a1443d2f-d578-425f-b868-a191e1cae490.png)
 
 ### How many items/bottles have been purchased in each red state from January 2019 to December 2021?
 2019:
 ![2019_red_count_by_state](https://user-images.githubusercontent.com/106630710/203455760-efbb9f99-f917-4397-8ad0-2c115c174013.png)
+
 2020:
 ![2020_total_red_count_by_state](https://user-images.githubusercontent.com/106630710/203440389-f1f32da8-ad19-49d0-889b-ca971e0f4469.png)
+
 2021:
 ![2021_total_bottle_count_by_red_state](https://user-images.githubusercontent.com/106630710/203440417-dc2081f8-ab01-4111-8138-e0781200e9bf.png)
 
