@@ -170,10 +170,11 @@ Most states decreased in total bottles shipped to them from 2020 to 2021
 
 **Limitations**
  
+ - We had limited data from only six companies, and for only three years. We also do not have sales data or prices for shipments. 
  
 **Recommendations**
 
-- Calculate wine bottles shipped per capita and see if any of our findings differ when considering a state's wine shipments to its population density
+- Calculate wine bottles shipped per capita and see if any of our findings differ when considering a state’s wine shipments to its population density. Compare results for each individual company as opposed to grouping all the data together.
 
  
 # Software
