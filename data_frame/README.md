@@ -155,7 +155,9 @@ ________________________________________________________________________________
   - Mississippi has prohibited the shipment of alcohol, though this order in particular may have confused the checks and balances in place because it was sent to Philedelphia, Mississippi.
 - 2021: Kentucky: 853
 <img width="896" alt="2019_red_maxmin" src="https://user-images.githubusercontent.com/106630710/203441033-e6e93750-2371-48f8-a479-05c5ebc32b11.png">
+
 ![2020_maxmin_total_red_by_state](https://user-images.githubusercontent.com/106630710/203441249-2da69fba-7bdf-42aa-9c23-ca8ca26a6fce.png) 
+
 ![2021_minmax_red_states](https://user-images.githubusercontent.com/106630710/203441286-5ff44e77-2a6c-4c26-a6b9-bc949fc0355d.png)
 
    #### Blue States: 
@@ -164,11 +166,14 @@ ________________________________________________________________________________
 - Total Bottle Count for Blue states in 2021: 742,676
 <img width="581" alt="2019_blue_total_bottle_count" src="https://user-images.githubusercontent.com/106630710/203441547-3e46e445-c31a-46c8-9988-9c5d2e1df9aa.png">
 <img width="577" alt="2020_total_blue_count" src="https://user-images.githubusercontent.com/106630710/203441592-71ac20e3-ac90-4fa9-a63a-2d26d098aa03.png">
+
 ![2021_total_bottle_count_blue](https://user-images.githubusercontent.com/106630710/203441634-1d483d54-d3d1-4173-ab64-408cd3094b62.png)
 
 ### How many items/bottles have been purchased in each blue state from January 2019 to December 2021?
 2019:![2019_blue_count_by_state_df](https://user-images.githubusercontent.com/106630710/203456645-8cd12ea7-2e10-45e0-8a5c-0cfeec1ff3d1.png)
+
 2020:![2020_total_blue_count_by_state](https://user-images.githubusercontent.com/106630710/202337513-4e58ae47-a7ec-4e3c-b8c6-72b05709d2f9.png)
+
 2021:![2021_total_bottle_count_by_blue_state](https://user-images.githubusercontent.com/106630710/203441765-1a4c198d-c3f6-482c-8eea-21dc61c81345.png)
 
  ### Which Blue state consumed the most wine?
@@ -180,5 +185,7 @@ ________________________________________________________________________________
 - 2020: Utah: 0
 - 2021: Delaware: 2,053
 <img width="892" alt="2019_blue_maxmin" src="https://user-images.githubusercontent.com/106630710/203442162-ed45a09d-1ce6-447c-96c9-0c217ae76039.png">
+
 ![2020_maxmin_total_blue_by_state](https://user-images.githubusercontent.com/106630710/203442194-7e9a8039-0924-4179-a226-1c3022568ef6.png)
+
 ![2021_minmax_blue_states](https://user-images.githubusercontent.com/106630710/203441901-a3df2214-bff3-48f4-9d47-d36a4b951852.png)
