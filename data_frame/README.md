@@ -21,8 +21,7 @@
 
 ## Week 1 Objectives:
 - Complete Project Proposal and get approval. (Granted!)
-
-"[Project Proposal]"(https://docs.google.com/document/d/1zHZrEiBU_xwVG8T5lrOBgKtYCqI6weuc/edit?usp=sharing&ouid=115296781988388488466&rtpof=true&sd=true)
+[Project Proposal](https://docs.google.com/document/d/1zHZrEiBU_xwVG8T5lrOBgKtYCqI6weuc/edit?usp=sharing&ouid=115296781988388488466&rtpof=true&sd=true)
 
 - Create rough draft for cleaning 2019, 2020 and 2021 data.
 - Create rough draft for joining individual months into annual data frames and .csv files.
@@ -134,6 +133,7 @@ ________________________________________________________________________________
 - 2021: Utah: 0 and Mississippi: 0
 <img width="841" alt="2019_minmax" src="https://user-images.githubusercontent.com/106630710/203439229-0b2db93b-d9dd-4652-8d72-68f17ef3c1ad.png">
 <img width="818" alt="2020_maxmin_total_bottles_by_state" src="https://user-images.githubusercontent.com/106630710/203439203-d2381490-ec4b-455b-9f77-67e1cbc229b3.png">
+
 ![2021_minmax_total states](https://user-images.githubusercontent.com/106630710/203456353-3ae391c4-8a30-4fd2-9060-4ff1b3cb680b.png)
 
    #### Red States: 
