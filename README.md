@@ -87,7 +87,7 @@ The accuracy of the model can be scored by calculating the R-squared value, Root
 Further training of the model could involve adding new purchase data as it occurs over time into the training data set and continuing to use the model to predict 'Item/Bottle Count'. As the model continues to learn from more and more data, it’s prediction accuracy should increase as well. This could allow wine companies to more accurately predict purchasing trends into the future. 
 
 To learn more about our Machine Learning model, see our outline here:
-[EW_MachineLearning_Outline](https://github.com/Sgant1/Final_Project/tree/main/EW_MachineLearning_Outline "EW Machine Learning")
+[EW_MachineLearning_Outline](https://github.com/eoweed/Winedemic/tree/main/EW_MachineLearning_Outline "EW Machine Learning")
 
 ## Questions Answered
 
