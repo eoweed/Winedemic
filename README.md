@@ -22,7 +22,7 @@ Team member Steve Gant is employed by a 3rd party logistics company and has been
 
 - We will also be focusing on the date the order was created as the purchase date rather than the shipment date--the date the wine actually shipped out to the customer. We consider this to be a more accurate indicator of a customer's motivation to create a wine purchase.
 
-- We will be using the 2019 shipping data to establish a baseline for sales pre-pandemic. The onset of the COVID-19 pandemic began around January of 2020 with many states issuing lockdowns and Shelter in Place orders around March/April 2020 and extended through around May/June of 2020. Wine shipment data for the year 2021 will be used to describe the post-pandemic/recovery period in this data story.
+- We will be using the 2019 shipping data to establish a baseline for sales pre-pandemic. The onset of the COVID-19 pandemic began around January of 2020 with many states issuing lockdowns and Shelter in Place orders around March/April 2020 and extending through around May/June of 2020. Wine shipment data for the year 2021 will be used to describe the post-pandemic/recovery period in this data story.
 
 - The includes wines shipped to all states except where prohibited by law. As is the case for the states of Rhode Island, Mississippi, and Utah.
 
@@ -42,7 +42,7 @@ Three of the companies are e-commerce based companies--wine sellers who offer wi
 
     - **Customer 2.** No tasting room, but were not able to perform private tastings due to COVID-19 shutdowns and restrictions. Bottle prices are on the high end in comparison to the average winery. With most consumers choosing to buy in volume over quality, overall sales losses were noted by the company even though our data was not able to include this information.
 
-    - **Customer 3.** Small production winery. Club 2 times a year in spring, then again in fall. Tasting room at owners house, was not open for Covid. Customer held orders for 2021 in October, November, December.
+    - **Customer 3.** Small production winery. Club 2 times a year in spring, then again in fall. Tasting room at owner's house was not open for Covid. Customer held orders for 2021 in October, November, December.
 
 **States Research**
 
@@ -50,9 +50,9 @@ We have compiled a spreadsheet with specific information as it pertains to each 
 
 [Research Data](https://docs.google.com/spreadsheets/d/1HCtPgPVyrqVgxTyKwS5Qj6OLXZJXs_VPq_MCs4-rusg/edit#gid=1741904899 "Research data for individual states Google Sheet")
 
-- We defined Lockdown start dates as the date in which the entire state was ordered by its Governor to "Shelter in Place" -- or in the case of Alaska, "Hunker Down." Many states ordered public schools to close and limited large gathering activities earlier than March of 2020 but did not close the states non-essential activities and businesses until later-- if at all, in the case of a couple states(). This definition made the most sense to us since our goal was to analyze how lockdown orders effected wine sales. With normal, in person, avenues for purchasing wine shutdown in many cases, were consumers more likely to have wine shipped to them as the natural alternative?
+- We defined Lockdown start dates as the date in which the entire state was ordered by its Governor to "Shelter in Place" -- or in the case of Alaska, "Hunker Down." Many states ordered public schools to close and limited large gathering activities earlier than March of 2020 but did not close the states non-essential activities and businesses until later-- if at all, in the case of a couple states. This definition made the most sense to us since our goal was to analyze how lockdown orders effected wine sales. With normal, in person, avenues for purchasing wine shutdown in many cases, were consumers more likely to have wine shipped to them as the natural alternative?
 
-- Political Alignment is defined in the boolean of either "red" or "blue" states based on the results of the 2020 national election. Pandemic response actions and decisions by government leaders became highly politicized against this dichotomy and thus we think this information will provide additional insight into our analysis of the citizens of each state's wine purchasing behavior.
+- Political Alignment is defined in the Boolean of either "red" or "blue" states based on the results of the 2020 national election. Pandemic response actions and decisions by government leaders became highly politicized against this dichotomy and thus we think this information will provide additional insight into our analysis of the citizens of each state's wine purchasing behavior.
 
 # Analysis
 
@@ -68,9 +68,9 @@ We have compiled a spreadsheet with specific information as it pertains to each 
 
 The goal of the machine learning model is to be able to predict 'Item/Bottle Count'. By using the available data from 2019, 2020 and 2021, we can create a regression model that will predict wine purchasing trends over time. 
 
-Initially we considered using a categorical model to predict a category range of 'Item/Bottle Count' and it seemed like a categorical model would be more accurate. However, we eventually concluded that it is more useful to have a regression model to predict a numerical value for purchasing trends over time, and when comparing the accuracy scores between the two types of models, the regression model scored pretty well. In addition, we have also altered the methods of splitting up the training and testing data. Initially we used the standard train_test_split() method on all the available data. Then we tried to customize the training data by ensuring we had samples from every month. Lastly, we decided that the most useful and reproducible way to split the data was by time period and training the model with past purchasing data and testing the model on the most recent available data. 
+Initially we considered using a categorical model to predict a category range of 'Item/Bottle Count' and it seemed like a categorical model would be more accurate. However, we eventually concluded that it is more useful to have a regression model to predict a numerical value for purchasing trends over time, and when comparing the accuracy scores between the two types of models, the regression model scored well. In addition, we have also altered the methods of splitting up the training and testing data. Initially we used the standard train_test_split() method on all the available data. Then we tried to customize the training data by ensuring we had samples from every month. Lastly, we decided that the most useful and reproducible way to split the data was by time period and training the model with past purchasing data and testing the model on the most recent available data. 
 
-We used the Random Forest Regressor model to make these predictions. Random Forest models are usually more accurate than single Decision Tree models and typically have a lower chance of overfitting the data. Random Forest models are also easier to use compared to neural networks because the input features do not need to be scaled in order to produce acceptable results, and they don’t usually need as much optimizing or tuning (no need to determine the optimal number of units, layers, epochs, etc.). However, it is important to be aware that Random Forest models cannot extrapolate values that fall outside of the training data, so the model will only be able to predict within the range of values that it has seen before. 
+We used the Random Forest Regressor model to make these predictions. Random Forest models are usually more accurate than single Decision Tree models and typically have a lower chance of overfitting the data. Random Forest models are also easier to use compared to neural networks because the input features do not need to be scaled in order to produce results, and they don’t usually need as much optimizing or tuning (no need to determine the optimal number of units, layers, epochs, etc.). However, it is important to be aware that Random Forest models cannot extrapolate values that fall outside of the training data, so the model will only be able to predict within the range of values that it has seen before. 
 
 Our input features will be the 'Company Name', 'City', 'State', and 'Created Date' ('Year', 'Month', and 'Day'), and the target will be the 'Item/Bottle Count'. We can drop the 'Order Number' column to reduce unnecessary noise because the order identification should not have any influence over the output. 'Ship Date' can also be dropped because we only want to focus on the date the order was created, whereas keeping 'Ship Date' may confuse the model. 'Zip' can be dropped because 'City' and 'State' should provide enough information to the model to produce acceptable results. In addition, the model cannot interpret categorical data, so the 'City' and 'State' columns need to be encoded and converted to numerical datatypes. 'Weight' can also be dropped because the values can be inferred from the target variable 'Item/Bottle Count'. 
 
@@ -121,7 +121,7 @@ January-February-March is considered the “Slow Season”.
 
 Blue states have more fun! --with wine! 
 
-Blue states dominate wine shipments accross all three years.  Though, Red states did steadily increase their slice of the pie from year to year.
+Blue states dominate wine shipments across all three years.  Though, Red states did steadily increase their slice of the pie from year to year.
 
 - [ ]  How do wine shipments compare between states that had stay at home orders issued vs states that did not?
 
@@ -129,7 +129,7 @@ California was the state considered to have the most strict COVID-19 response pr
 
 ![CA_yearly_wines_shipped_by_month_with_notes](https://github.com/Sgant1/Final_Project/blob/6c6317cc8272cf8b5e88f644b86b4f46e29475b3/images/CA_yearly_wines_shipped_by_month_with_notes.png)
 
-Iowa was the state considered to have the most lax COVID-19 response precautionary ordinances.
+Iowa was the state considered to have the most relaxed COVID-19 response precautionary ordinances.
 
 ![IA_yearly_wines_shipped_by_month_with_notes.](https://github.com/Sgant1/Final_Project/blob/6c6317cc8272cf8b5e88f644b86b4f46e29475b3/images/IA_yearly_wines_shipped_by_month_with_notes.png)
 
@@ -171,9 +171,9 @@ Most states decreased in total bottles shipped to them from 2020 to 2021
 **Limitations**
  
  
-**Recomendations**
+**Recommendations**
 
-- Calculate wine bottles shipped per capita and see if any of our findings differ when considering a states wine shipments to its population density
+- Calculate wine bottles shipped per capita and see if any of our findings differ when considering a state's wine shipments to its population density
 
  
 # Software
